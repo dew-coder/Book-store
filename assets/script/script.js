@@ -1,5 +1,5 @@
 const inputTagArr = getInputObjectsArr();
-let count = 0;
+// let count = 0;
 //map -> num of ele given same number of ele will be returned, we gave 8 objects and map returned value of all of them by calling callback function
 const getTagArr = inputTagArr.map( (val, idx, arr) => {
     return getInputTag(val);
@@ -31,12 +31,12 @@ function saveInputDataInTable() {
 
     for(let input of inputTagArr) {
         const { id } = input;
-        if(input){
-            count++;
-        }
-        if(count<8){
-            alert("Fill all details");
-        }
+        // if(input){
+        //     count++;
+        // }
+        // if(count<8){
+        //     alert("Fill all details");
+        // }
         const inputData = document.querySelector(`#${"input"+id}`);
         const value = inputData.value;
 
